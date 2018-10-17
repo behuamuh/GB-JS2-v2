@@ -15,7 +15,7 @@ Goods.prototype.render = function() {
     id: this.id,
     text: this.name + " -  Цена: " + this.price,
   });
-  good.append("<br>");
+  good.append($("<br>"));
   var input = $("<input/>", {
     type: "text",
     id: this.id + "input",
@@ -41,6 +41,6 @@ Goods.prototype.render = function() {
     );
     input.val("");
   });
-  good.append(input, button, $("<hr>"));
+  good.append(input, $("<br>"), button, $("<hr>"));
   $("#goods").append(good);
 };

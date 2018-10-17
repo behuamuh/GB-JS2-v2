@@ -1,5 +1,5 @@
 function Basket(userId) {
-  this.url = "behuamuh.github.io";
+  //this.url = 'behuamuh.github.io';
   Container.call(this);
   this.id = "basket";
   this.userId = userId;
@@ -35,7 +35,7 @@ Basket.prototype.render = function() {
 };
 Basket.prototype.get = function() {
   $.get({
-    url: "./get.json",
+    url: "./json/get.json",
     context: this,
     dataType: "json",
     success: function(data) {
@@ -53,7 +53,7 @@ Basket.prototype.get = function() {
 Basket.prototype.add = function(item, quant) {
   $.get({
     //ajax
-    url: "./add.json",
+    url: "./json/add.json",
     //method: 'POST',
     context: this,
     /*data: { user_id : this.user_id,
@@ -80,7 +80,7 @@ Basket.prototype.add = function(item, quant) {
 Basket.prototype.clear = function() {
   $.get({
     //ajax
-    url: "./add.json",
+    url: "./json/add.json",
     //method: 'POST',
     context: this,
     /*data: {

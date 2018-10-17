@@ -1,3 +1,1 @@
-https://behuamuh.github.io/review/
-
-https://behuamuh.github.io/basket/
+https://behuamuh.github.io/mycite/

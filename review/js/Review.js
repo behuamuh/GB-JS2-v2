@@ -6,7 +6,7 @@ function Review(id, message) {
 
   $.get({
     //ajax
-    url: "./add.json",
+    url: "./json/add.json",
     //method: 'POST',
     context: this,
     data: {
@@ -42,7 +42,7 @@ Review.prototype.render = function() {
       click: function() {
         $.get({
           //ajax
-          url: "./submit.json",
+          url: "./json/submit.json",
           //method: 'POST',
           context: self,
           data: {
@@ -75,7 +75,7 @@ Review.prototype.render = function() {
 Review.prototype.remove = function() {
   $.get({
     //ajax
-    url: "./delete.json",
+    url: "./json/delete.json",
     //method: 'POST',
     context: this,
     data: {
